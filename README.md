@@ -1,4 +1,4 @@
-QR Scanner App
+<h1>QR Scanner App</h1>
 
 QR Scanner App lets you scan any QR code and opens the linked website inside the app using an integrated WebView. The app remembers your last scanned QR, so you can continue browsing without scanning again.
 
