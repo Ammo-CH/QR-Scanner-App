@@ -2,16 +2,16 @@
 
 QR Scanner App lets you scan any QR code and opens the linked website inside the app using an integrated WebView. The app remembers your last scanned QR, so you can continue browsing without scanning again.
 
-Features
+<h3>Features</h3>
+<ul>
+<li>3-second splash screen on app launch</li>
 
-3-second splash screen on app launch
+<li>Auto-redirect to WebView if there’s a previously scanned QR</li>
 
-Auto-redirect to WebView if there’s a previously scanned QR
+<li>Homepage with a button to scan a new QR code</li>
 
-Homepage with a button to scan a new QR code
-
-Seamless WebView navigation after scanning
-
+<li>Seamless WebView navigation after scanning</li>
+</ul>
 Installation
 
 Clone the repo:
