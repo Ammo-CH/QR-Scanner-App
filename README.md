@@ -1,16 +1,38 @@
-# qr_code_scanner
+QR Scanner App
 
-A new Flutter project.
+QR Scanner App lets you scan any QR code and opens the linked website inside the app using an integrated WebView. The app remembers your last scanned QR, so you can continue browsing without scanning again.
 
-## Getting Started
+Features
 
-This project is a starting point for a Flutter application.
+3-second splash screen on app launch
 
-A few resources to get you started if this is your first Flutter project:
+Auto-redirect to WebView if there’s a previously scanned QR
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Homepage with a button to scan a new QR code
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Seamless WebView navigation after scanning
+
+Installation
+
+Clone the repo:
+
+git clone https://github.com/Ammo-CH/QR-Scanner-App.git
+
+
+Open the project in Android Studio or VS Code.
+
+Run the app on an emulator or real device.
+
+Usage
+
+Launch the app (see the 3-second splash screen).
+
+If a previous QR exists, you’ll go directly to the WebView.
+
+Otherwise, tap the Scan QR button on the homepage.
+
+Scan any QR code to open the linked website inside the app.
+
+Contributing
+
+Fork the repo, make improvements, and submit a pull request.
