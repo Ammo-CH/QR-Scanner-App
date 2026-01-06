@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:qr_code_scanner/splash_screen.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsBinding binding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: binding);
+
   runApp(MyApp());
 }
 

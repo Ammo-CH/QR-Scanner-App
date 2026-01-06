@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:qr_code_scanner/home_screen.dart';
 import 'package:qr_code_scanner/web_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -37,6 +38,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   void initState() {
     super.initState();
+    FlutterNativeSplash.remove();
     Future.delayed(Duration(seconds: 3), () {
       check();
     });
