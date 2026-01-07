@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:PosWala/web_view.dart';
+import 'package:qr_code_scanner/web_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MobileScannerScreen extends StatefulWidget {

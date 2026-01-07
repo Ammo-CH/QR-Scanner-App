@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:PosWala/splash_screen.dart';
+import 'package:qr_code_scanner/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsBinding binding = WidgetsFlutterBinding.ensureInitialized();
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        scaffoldBackgroundColor: Color.fromARGB(255, 148, 206, 228),
         primaryColor: Color.fromARGB(255, 148, 206, 228),
-        appBarTheme: AppBarThemeData(foregroundColor: Colors.blue),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        appBarTheme: AppBarThemeData(foregroundColor: Colors.blue),
+        scaffoldBackgroundColor: Color.fromARGB(255, 148, 206, 228),
         textTheme: Theme.of(context).textTheme.apply(
               bodyColor: Colors.white,    
               displayColor: Colors.blueAccent, 
@@ -27,10 +27,10 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
-                  padding: EdgeInsets.zero,
                   elevation: 10,
-                  backgroundColor: const Color(0xFF2C4A56),
+                  padding: EdgeInsets.zero,
                   foregroundColor: Colors.white,
+                  backgroundColor: const Color(0xFF2C4A56),
                   shadowColor: const Color.fromARGB(255, 66, 92, 103),
           )
         )

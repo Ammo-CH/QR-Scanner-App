@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:PosWala/mobile_scanner.dart';
+import 'package:qr_code_scanner/mobile_scanner.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
