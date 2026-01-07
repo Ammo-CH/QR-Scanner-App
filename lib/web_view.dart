@@ -19,7 +19,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
     super.initState();
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..setBackgroundColor(const Color.fromARGB(255, 232, 161, 245))
+      ..setBackgroundColor(const Color.fromARGB(255, 148, 206, 228),)
       ..setNavigationDelegate(
 
         NavigationDelegate(
@@ -38,7 +38,6 @@ class _WebViewScreenState extends State<WebViewScreen> {
       body: Stack(
         children: [
           WebViewWidget(controller: controller),
-          // if (isloading) Center(child: CircularProgressIndicator(color: Colors.grey,)),
           if (!isloading) Center(child: SpinKitDualRing(color: Colors.white,)),
         ],
       ),

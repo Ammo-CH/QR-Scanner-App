@@ -8,8 +8,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('QR Scanner', style: TextStyle(color: Colors.purple)),
-        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        title: Image.asset(
+          'assets/images/logo.png',
+          fit: BoxFit.contain,
+          height: kToolbarHeight - 10,
+        ),
       ),
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Stack(
@@ -18,8 +22,8 @@ class HomeScreen extends StatelessWidget {
           Positioned(
             top: 50,
             child: Text(
-              'Scan the QR code first',
-              style: TextStyle(fontSize: 20),
+              'Scan to connect.',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ),
           Positioned(
@@ -37,14 +41,6 @@ class HomeScreen extends StatelessWidget {
                     ),
                   );
                 },
-                style: ElevatedButton.styleFrom(
-                  shape: const CircleBorder(),
-                  padding: EdgeInsets.zero,
-                  elevation: 10,
-                  backgroundColor: const Color(0xFF9C27B0),
-                  foregroundColor: Colors.white,
-                  shadowColor: Colors.purpleAccent,
-                ),
                 child: const Icon(Icons.qr_code_2_sharp, size: 45),
               ),
             ),

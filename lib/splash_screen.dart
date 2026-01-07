@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:qr_code_scanner/home_screen.dart';
@@ -47,16 +46,9 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purpleAccent,
+      backgroundColor: Theme.of(context).primaryColor,
       body: Center(
-        child: CachedNetworkImage(
-          imageUrl:
-              'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
-          imageBuilder: (context, imageProvider) =>
-              CircleAvatar(radius: 52, backgroundImage: imageProvider),
-          errorWidget: (context, url, error) =>
-              CircleAvatar(child: Icon(Icons.error)),
-        ),
+        child: Image.asset('assets/images/logo.png')
       ),
     );
   }
