@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qr_code_scanner/mobile_scanner.dart';
+import 'package:PosWala/mobile_scanner.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,6 +8,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
+
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         title: Image.asset(
           'assets/images/logo.png',

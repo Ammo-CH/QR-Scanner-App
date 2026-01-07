@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:qr_code_scanner/home_screen.dart';
-import 'package:qr_code_scanner/web_view.dart';
+import 'package:PosWala/home_screen.dart';
+import 'package:PosWala/web_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Splashscreen extends StatefulWidget {

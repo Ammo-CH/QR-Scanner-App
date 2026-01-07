@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:qr_code_scanner/splash_screen.dart';
+import 'package:PosWala/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsBinding binding = WidgetsFlutterBinding.ensureInitialized();
